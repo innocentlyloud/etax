@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {HeaderComponent} from './header.component';
 import { CollapseModule } from 'ng2-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-//import {HeaderRoutingModule} from "./header.routing.module";
+import {HeaderRoutingModule} from "./header.routing.module";
 import { RouterModule }   from '@angular/router';
 
 @NgModule({
