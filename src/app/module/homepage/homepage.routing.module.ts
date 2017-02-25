@@ -1,10 +1,10 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TestComponent }   from '../../test/test.component';
+import { HomepageComponent }   from './homepage.component';
 //import { HeroComponent }      from './hero/hero.component';
 //import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 const routes: Routes = [
-  { path: 'index',  component: TestComponent }/*,
+  { path: 'homepage',  component: HomepageComponent }/*,
   { path: 'Portfolio', component: TestComponent },
   { path: 'About',     component: TestComponent }*/
 ];
@@ -12,4 +12,4 @@ const routes: Routes = [
   imports: [ RouterModule.forChild(routes) ],
   exports: [ RouterModule ]
 })
-export class HeaderRoutingModule {}
+export class HomepageRoutingModule {}

@@ -10,8 +10,8 @@ import { RouterModule }   from '@angular/router';
   imports: [
     CommonModule,
     NgbModule.forRoot(),
-    //HeaderRoutingModule,
-    RouterModule
+    HeaderRoutingModule
+    //RouterModule
     //CollapseModule.forRoot()
   ],
   declarations: [HeaderComponent],
