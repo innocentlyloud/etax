@@ -1,3 +1,74 @@
-<p>
-  header works!
-</p>
+<nav class="navbar navbar-toggleable navbar-light bg-faded" style="background-color: #e3f2fd;">
+  <button class="navbar-toggler navbar-toggler-right" type="button"
+          (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+          aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngbCollapse]="!isCollapsed">
+    <ul class="nav navbar-nav">
+      <li id="header_home" class="dropdown active">
+        <a class="" data-delay="0" data-close-others="false" href="/index.php">
+          Home
+        </a>
+      </li>
+      <li id="header_products" class="dropdown" ngbDropdown>
+        <a class="" ngbDropdownToggle>
+          Products
+          <i class="icon-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="product_index.php?id=21">ITR e-Filing Gateway</a></li>
+          <li><a href="product_index.php?id=3">Income-tax Computation</a></li>
+          <li><a href="product_index.php?id=39">Bulk ITR-1 Excel</a></li>
+          <li><a href="product_index.php?id=11">TDS software</a></li>
+          <li><a href="product_index.php?id=12">Digitally Signed Form-16 </a></li>
+          <li><a href="product_index.php?id=13">Annual Information Return</a></li>
+          <li><a href="product_index.php?id=34">Online TDS</a></li>
+          <li><a href="product_index.php?id=38">Excel e-TDS</a></li>
+          <li><a href="product_index.php?id=40">XBRL Software 2015-16</a></li>
+          <li><a href="product_index.php?id=37">XBRL Software 2014-15</a></li>
+          <li><a href="product_index.php?id=30">XBRL Software 2013-14</a></li>
+          <li><a href="product_index.php?id=23">XBRL Software 2012-13</a></li>
+          <li><a href="product_index.php?id=19">XBRL Software 2011-12</a></li>
+          <li><a href="product_index.php?id=2">XBRL Software 2010-11</a></li>
+          <li><a href="http://www.lexlegis.com" target="_blank">Lexlegis</a></li>
+          <li><a href="product_index.php?id=15">File Secure Software</a></li>
+          <li><a href="product_index.php?id=17">Goods &amp; Services Tax</a></li>
+          <li><a href="product_index.php?id=20">Digital Signature</a></li>
+          <li><a href="https://myitreturn.com" target="_blank">myITreturn.com</a></li>
+        </ul>
+      </li>
+      <li id="header_services" class="dropdown" ngbDropdown>
+        <a ngbDropdownToggle href="#">
+          Services
+          <i class="icon-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="service_index.php?id=26">TDS Outsourcing Service</a></li>
+          <li><a href="service_index.php?id=28">PAN Verification Service</a></li>
+          <li><a href="service_index.php?id=29">Skorydov Advisory Service</a></li>
+          <li><a href="service_index.php?id=35">National Judicial Reference System </a></li>
+          <li><a href="service_index.php?id=27">XBRL Outsourcing Service</a></li>
+        </ul>
+      </li>
+      <li id="header_about" class="dropdown">
+        <a data-delay="0" data-close-others="false" href="/about.php">
+          About Us
+        </a>
+      </li>
+      <li id="header_contact" class="dropdown" ngbDropdown>
+        <a class="dropdown-toggle" href="#" ngbDropdownToggle>
+          Contact
+          <i class="icon-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="/contact.php">Contact Us</a></li>
+          <li><a href="/dealers.php">Dealers</a></li>
+        </ul>
+      </li>
+      <li><a href="/user.php" class="redFont"> Sign in </a>
+      </li>
+    </ul>
+  </div>
+</nav>
