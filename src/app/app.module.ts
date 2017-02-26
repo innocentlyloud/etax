@@ -13,11 +13,13 @@ import { TestComponent } from './test/test.component';
 //import { RouterModule, Routes } from '@angular/router';
 //import {HeaderRoutingModule} from './module/header/header.routing.module';
 import { AppRoutingModule }     from './app-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
