@@ -9,7 +9,7 @@ import {HomepageComponent} from "./module/homepage/homepage.component";
 const routes: Routes = [
   { path: '', redirectTo: '/homepage', pathMatch: 'full' },
   //{ path: 'homepage',  component: HomepageComponent },
-  { path: 'About', component: TestComponent },
+  { path: 'about', component: TestComponent },
   { path: '**',     component: NotFoundComponent }
 ];
 @NgModule({

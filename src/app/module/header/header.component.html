@@ -6,55 +6,55 @@
               aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Etax</a>
+      <a class="navbar-brand" href="/homepage">Etax</a>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" [ngbCollapse]="!isCollapsed">
         <ul class="nav navbar-nav">
-          <li id="header_home" class="nav-item active">
-            <a class="nav-link" href="/homepage">
+          <li id="header_home" class="nav-item">
+            <a class="nav-link" routerLink="/homepage" routerLinkActive="active">
               Home
             </a>
           </li>
           <li id="header_products" class="nav-item dropdown" ngbDropdown>
-            <a class="nav-link" ngbDropdownToggle>
+            <a class="nav-link" ngbDropdownToggle href="javascript:;">
               Products
             </a>
             <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="product_index.php?id=21">ITR e-Filing Gateway</a></li>
-              <li class="dropdown-item"><a href="product_index.php?id=3">Income-tax Computation</a></li>
-              <li class="dropdown-item"><a href="product_index.php?id=39">Bulk ITR-1 Excel</a></li>
-              <li class="dropdown-item"><a href="product_index.php?id=11">TDS software</a></li>
-              <li class="dropdown-item"><a href="product_index.php?id=12">Digitally Signed Form-16 </a></li>
-              <li class="dropdown-item"><a href="product_index.php?id=13">Annual Information Return</a></li>
+              <li class="dropdown-item"><a href="product_index?id=21">ITR e-Filing Gateway</a></li>
+              <li class="dropdown-item"><a href="product_index?id=3">Income-tax Computation</a></li>
+              <li class="dropdown-item"><a href="product_index?id=39">Bulk ITR-1 Excel</a></li>
+              <li class="dropdown-item"><a href="product_index?id=11">TDS software</a></li>
+              <li class="dropdown-item"><a href="product_index?id=12">Digitally Signed Form-16 </a></li>
+              <li class="dropdown-item"><a href="product_index?id=13">Annual Information Return</a></li>
             </ul>
           </li>
           <li id="header_services" class="nav-item dropdown" ngbDropdown>
-            <a class="nav-link" ngbDropdownToggle href="#">
+            <a class="nav-link" ngbDropdownToggle href="javascript:;">
               Services
               <i class="icon-angle-down"></i>
             </a>
             <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="service_index.php?id=26">TDS Outsourcing Service</a></li>
-              <li class="dropdown-item"><a href="service_index.php?id=28">PAN Verification Service</a></li>
-              <li class="dropdown-item"><a href="service_index.php?id=29">Skorydov Advisory Service</a></li>
-              <li class="dropdown-item"><a href="service_index.php?id=35">National Judicial Reference System </a></li>
-              <li class="dropdown-item"><a href="service_index.php?id=27">XBRL Outsourcing Service</a></li>
+              <li class="dropdown-item"><a href="service_index?id=26">TDS Outsourcing Service</a></li>
+              <li class="dropdown-item"><a href="service_index?id=28">PAN Verification Service</a></li>
+              <li class="dropdown-item"><a href="service_index?id=29">Skorydov Advisory Service</a></li>
+              <li class="dropdown-item"><a href="service_index?id=35">National Judicial Reference System </a></li>
+              <li class="dropdown-item"><a href="service_index?id=27">XBRL Outsourcing Service</a></li>
             </ul>
           </li>
           <li id="header_about" class="nav-item ">
-            <a class="nav-link" href="/about">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">
               About Us
             </a>
           </li>
           <li id="header_contact" class="nav-item dropdown" ngbDropdown>
-            <a class="nav-link" href="#" ngbDropdownToggle>
+            <a class="nav-link" href="javascript:;" ngbDropdownToggle>
               Contact
             </a>
             <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="/contact.php">Contact Us</a></li>
-              <li class="dropdown-item"><a href="/dealers.php">Dealers</a></li>
+              <li class="dropdown-item"><a href="/contact">Contact Us</a></li>
+              <li class="dropdown-item"><a href="/dealers">Dealers</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="/user.php" class="nav-link"> Sign in </a>
+          <li class="nav-item"><a routerLink="/user" class="nav-link redFont" routerLinkActive="active"> Sign in </a>
           </li>
         </ul>
       </div>

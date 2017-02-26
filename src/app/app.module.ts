@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import {HeaderModule} from './module/header/header.module';
 import {FooterModule} from './module/footer/footer.module';
 import {HomepageModule} from './module/homepage/homepage.module';
+import {LoginModule} from './module/login/login.module';
+
 import { TestComponent } from './test/test.component';
 
 //import { RouterModule, Routes } from '@angular/router';
@@ -28,6 +30,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HeaderModule,
     FooterModule,
     HomepageModule,
+    LoginModule,
     AppRoutingModule
     //RouterModule
   ],
